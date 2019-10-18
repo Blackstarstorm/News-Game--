@@ -1,0 +1,21 @@
+#header{
+  text-align: center;
+  
+}
+
+a#home{
+  padding-top: 20px;
+  text-decoration: none;
+} 
+
+div#header{
+  background: orangered;
+  position: sticky;
+}
+
+
+
+
+#footer{
+  background: green;
+}
