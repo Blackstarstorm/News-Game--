@@ -6,3 +6,5 @@ export const getApi = async function (gameid) {
   const response = await axios(`https://newsapi.org/v2/everything?sources=ign&q=${gameid}&apiKey=f475e555aa7945feb889e93489b953e8`);
   return response.data.articles;
 }
+
+dssdfsdfd
