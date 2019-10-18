@@ -9,12 +9,14 @@ class App extends React.Component {
       articles: []
     }
   }
+  
   componentDidMount = async () => {
     const articles = await getApi('pokemon');
     this.setState({
       articles
     })
   }
+
   render() {
     return (
       <div className="App">
