@@ -7,4 +7,3 @@ export const getApi = async function (gameid) {
   return response.data.articles;
 }
 
-dssdfsdfd
