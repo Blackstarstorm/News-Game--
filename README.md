@@ -17,7 +17,7 @@
 
 ### Wireframes
 
-![](Screen Shot 2019-10-17 at 9.47.27 PM.png)
+
 
 #### Being able to call the api 
 #### Finding artilces 
