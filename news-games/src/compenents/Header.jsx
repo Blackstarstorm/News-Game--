@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Header() {
+export default function Header(props) {
   return (
     <div id='header'>
       <Link id="home" to="/">Home</Link>
@@ -12,7 +12,7 @@ export default function Header() {
           placeholder=
           "Game series(i.e. pokemon)"
         />
-        <input type="submit" value="Let's A Go" />
+        <input type="submit" value="Let's A Go" onClick={props.handleClick}/>
       </form>
 
     </div>
