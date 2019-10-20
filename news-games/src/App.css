@@ -1,20 +1,29 @@
-#header{
+div.App{ 
+  background: url("https://www.dailydot.com/wp-content/uploads/fd9/9a/54fc501b9ddb414640e67e059b2d3346.jpg");
+}
+header{
   text-align: center;
-  
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/Switch-Compare-796x417.jpg");
 }
 
 a#home{
-  padding-top: 20px;
+  padding: 8px 20px;
   text-decoration: none;
+  border: 2px solid black;
 } 
+a#home:hover{
+  color:yellowgreen;
+}
 
 div#header{
-  background: orangered;
+ 
+  height: 200px;
   position: sticky;
 }
 div#article{
   display: grid;
   grid-template-columns: 2fr 2fr;
+  grid-gap: 50px;
   
 }
 
@@ -24,21 +33,32 @@ div.articles{
   width: 80%;
   padding: 30px;
   box-shadow: 5px 10px cornflowerblue;
-  
+  background-color: white;
 }
 
 div.articles a:hover{
   color:red;
 }
+div#hero-image{
+  background-image: url("https://www.guinnessworldrecords.com/Images/Top-10-best-selling-consoles_tcm25-551954.jpg");
+  height: 200px;
+  color: orange
+}
 
+div#hero-text{
+  text-align: center;
+
+}
 img{
   width: 330px;
   position: relative;
 }
-img:hover{
+div.articles img:hover{
   transform: scale(2,2);
 }
 
 #footer{
-  background: green;
+  background: blue;
+  height: 100px;
+  text-align: center;
 }
