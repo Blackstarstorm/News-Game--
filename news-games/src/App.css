@@ -1,5 +1,6 @@
 div.App{ 
   background: url("https://www.dailydot.com/wp-content/uploads/fd9/9a/54fc501b9ddb414640e67e059b2d3346.jpg");
+  font-family: 'Press Start 2P', cursive;
 }
 
 header{
@@ -8,9 +9,25 @@ header{
   position: sticky;
 } 
 
-input{
+input#search-bar{
   width:220px;
 } 
+button#submit{ 
+border-radius: 6px; 
+color: white;
+background: linear-gradient(to right, red, blue);
+}
+
+button#button-sources{
+width: 30%;
+height: 30%;  
+border-radius: 6px; 
+color: white;
+background: linear-gradient(to right, green, blue);
+}
+button:hover{ 
+opacity: 0.7;
+}
 
 a#home{
   padding: 8px 20px;
@@ -25,7 +42,7 @@ a#home:hover{
 div#hero-image{
   background-image: url("https://www.guinnessworldrecords.com/Images/Top-10-best-selling-consoles_tcm25-551954.jpg");
   height: 200px;
-  color: orange
+  color: black;
 }
 
 div#hero-text{
@@ -51,7 +68,9 @@ div.articles{
 div.articles a:hover{
   color:red;
 }
-
+div#fail{
+  background: rgba(255, 255, 255, 0.4) ;
+}
 img{
   width: 330px;
   position: relative;
@@ -59,11 +78,18 @@ img{
 
 div.articles img:hover{
   transform: scale(1.3);
-  transition: .2s ease-in-out;
+  transition: .2s ease-out;
 }
 
 footer{
   background-image: url("https://www.guinnessworldrecords.com/Images/Top-10-best-selling-consoles_tcm25-551954.jpg");
   height: 100px;
   text-align: center;
+}
+
+
+@media only screen and (max-width: 400px) {
+  div#article{
+    grid-template-columns: 1fr;
+  }
 }

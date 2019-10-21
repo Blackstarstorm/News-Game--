@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './Nav'
 
+
 export default function Hero(props) {
   return (
     <section id='hero'>
@@ -14,7 +15,8 @@ export default function Hero(props) {
         <button id="submit">
           Let's a Go
         </button>
-          
+
+      
       </form>   
       </div>
 

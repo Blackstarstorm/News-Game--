@@ -7,8 +7,8 @@ import Articles from './compenents/Articles';
 import Nav from './compenents/Nav';
 import Hero from './compenents/Hero';
 import Sources from './compenents/Sources';
-import { Route, Link } from 'react-router-dom';
-import { getArticles, getArticles2 } from './services/api-helper';
+import { Route, Link, withRouter } from 'react-router-dom';
+import { getArticles } from './services/api-helper';
 
 
 class App extends React.Component {
@@ -16,16 +16,19 @@ class App extends React.Component {
     super(props);
     this.state = {
       articles: [],
-      search: ""
+      search: "",
+      radio: ""
+      
     }
   }
 
   componentDidMount = async () => {
-    const articles = await getArticles("playstation");
+    const articles = await getArticles("polygon","playstation");
     this.setState({
       articles
     })
   }
+ 
 
   handleChange = (event) => {
     let value = event.target.value
@@ -33,13 +36,22 @@ class App extends React.Component {
       search: value
     })
   }
+  handleClick = (event) =>
+  {
+    let radio = event.target.value
+    this.setState({
+    radio: radio
+    })
+    }
 
   handleSubmit = async (event) => {
     event.preventDefault();
-    const articles = await getArticles(this.state.search)
+    const articles = await getArticles
+      (this.state.radio, this.state.search)
     this.setState({
       articles: articles
     })
+    this.props.history.push('/')
   }
 
   render() {
@@ -47,7 +59,15 @@ class App extends React.Component {
       <div className="App">
         <header>
           <Header  />
-          <Hero handleChange={this.handleChange} handleSubmit={this.handleSubmit}/>
+          <Hero handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
+          <h2>Pick a News Source</h2>
+          <Route path='/sources' render={() => <Sources radio={this.state.radio} handleClick={this.handleClick}/>} />
+          
+          <Link to="/Sources">
+            <button handleChange={this.buttonChange}
+            id="button-sources">Sources</button>
+          </Link>
+          
         </header>
 
         <main>
@@ -56,13 +76,12 @@ class App extends React.Component {
             render={() =>
               (<Articles articles={this.state.articles} />)}
           />
-          <Sources />
-         
         </main>
+
         <Footer />
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
