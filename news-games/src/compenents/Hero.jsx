@@ -1,18 +1,23 @@
 import React from 'react';
+import Nav from './Nav'
 
-export default function Hero() {
+export default function Hero(props) {
   return (
     <section id='hero'>
       <div id='hero-image'>
-     
-        
-     
-
-      <div id='hero-text'>
-        <h1>New Game Plus</h1>
-        <p>Giving the players their geeky news</p>
+    
+      <form onSubmit={props.handleSubmit}>
+        <input id="search-bar" type="text"
+          placeholder=
+          "Type title here(i.e. pokemon)" onChange={props.handleChange}
+        />
+        <button id="submit">
+          Let's a Go
+        </button>
+          
+      </form>   
       </div>
-    </div>
+
     </section>
   )
 }
