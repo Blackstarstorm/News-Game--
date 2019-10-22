@@ -1,12 +1,31 @@
 div.App{ 
-  background: url("https://www.dailydot.com/wp-content/uploads/fd9/9a/54fc501b9ddb414640e67e059b2d3346.jpg");
+  background: url("https://res.cloudinary.com/dvysqqdqe/image/upload/v1571756663/54fc501b9ddb414640e67e059b2d3346_c5qsve.jpg");
   font-family: 'Press Start 2P', cursive;
 }
 
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  color: rgb(118, 116, 116);
+  font-size: 18px;
+}
+
+h2.title{
+  color:whitesmoke;
+}
+
+h3{
+  overflow: hidden;
+  font-family: sans-serif;
+  font-weight: 400;
+}
 header{
   text-align: center;
-  background: whitesmoke;
+  color: whitesmoke;
   position: sticky;
+  background-image: url('https://res.cloudinary.com/dvysqqdqe/image/upload/v1571756719/nasa-galaxy_9pu4.910_wcnj13.jpg');
 } 
 
 input#search-bar{
@@ -27,20 +46,25 @@ background: linear-gradient(to right, green, blue);
 }
 button:hover{ 
 opacity: 0.7;
+cursor: pointer;
+}
+input.radio:hover{
+  cursor: pointer;
 }
 
 a#home{
   padding: 8px 20px;
   text-decoration: none;
   border: 2px solid black;
+  color: whitesmoke;
 } 
 
 a#home:hover{
-  color:yellowgreen;
+  color:blue;
 }
 
 div#hero-image{
-  background-image: url("https://www.guinnessworldrecords.com/Images/Top-10-best-selling-consoles_tcm25-551954.jpg");
+  background-image: url("https://res.cloudinary.com/dvysqqdqe/image/upload/v1571756767/Top-10-best-selling-consoles_tcm25-551954_uhnrki.jpg");
   height: 200px;
   color: black;
 }
@@ -52,8 +76,8 @@ div#hero-text{
 div#article{
   display: grid;
   grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
   grid-gap: 50px;
-  
 }
 
 div.articles{
@@ -71,7 +95,7 @@ div.articles a:hover{
 div#fail{
   background: rgba(255, 255, 255, 0.4) ;
 }
-img{
+div.articles img{
   width: 330px;
   position: relative;
 }
@@ -82,11 +106,22 @@ div.articles img:hover{
 }
 
 footer{
-  background-image: url("https://www.guinnessworldrecords.com/Images/Top-10-best-selling-consoles_tcm25-551954.jpg");
+  background-image: url("https://res.cloudinary.com/dvysqqdqe/image/upload/v1571756767/Top-10-best-selling-consoles_tcm25-551954_uhnrki.jpg");
   height: 100px;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
-
+div#Github img{
+  width: 65px;
+  height: 65px;
+  padding: 20px;
+}
+div#LinkIn img{
+  width: 65px;
+  height: 65px;
+  padding: 20px;
+}
 
 @media only screen and (max-width: 400px) {
   div#article{

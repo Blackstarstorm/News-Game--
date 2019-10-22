@@ -60,7 +60,7 @@ class App extends React.Component {
         <header>
           <Header  />
           <Hero handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
-          <h2>Pick a News Source</h2>
+          <h2 className="title">Pick a News Source</h2>
           <Route path='/sources' render={() => <Sources radio={this.state.radio} handleClick={this.handleClick}/>} />
           
           <Link to="/Sources">

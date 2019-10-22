@@ -12,10 +12,10 @@ export default function Articles(props) {
 
             <h1>{news.title}</h1>
             <h2>{news.author}</h2>
-            <a target="_blank" href={news.url}>The Source
+            <a target="_blank" href={news.url}> Source's Page
             </a>
             <h3>{news.description}</h3>
-            <img src={news.urlToImage} />
+            <img src={news.urlToImage !== "" ? news.urlToImage : <img src="https://res.cloudinary.com/dvysqqdqe/image/upload/v1571757691/crop_xivbsb.jpg" /> } />
           </div>
         ))
           :
