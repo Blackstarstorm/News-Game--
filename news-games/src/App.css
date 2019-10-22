@@ -31,6 +31,7 @@ header{
 input#search-bar{
   width:220px;
 } 
+
 button#submit{ 
 border-radius: 6px; 
 color: white;
@@ -52,6 +53,9 @@ input.radio:hover{
   cursor: pointer;
 }
 
+span#link{
+ 
+}
 a#home{
   padding: 8px 20px;
   text-decoration: none;
@@ -65,8 +69,9 @@ a#home:hover{
 
 div#hero-image{
   background-image: url("https://res.cloudinary.com/dvysqqdqe/image/upload/v1571756767/Top-10-best-selling-consoles_tcm25-551954_uhnrki.jpg");
-  height: 200px;
+  height: 480px;
   color: black;
+  background-size: cover;
 }
 
 div#hero-text{
@@ -80,20 +85,34 @@ div#article{
   grid-gap: 50px;
 }
 
+div#article a{
+color: blue; 
+text-decoration: none;
+}
+
+div#article a:hover{
+  color:rgb(179, 2, 179); 
+  }
+
 div.articles{
   border: 1px solid black;
   margin: 10px auto;
   width: 80%;
   padding: 30px;
   box-shadow: 5px 10px cornflowerblue;
-  background-color: white;
+  background: whitesmoke;
+  
 }
 
 div.articles a:hover{
   color:red;
 }
+
 div#fail{
   background: rgba(255, 255, 255, 0.4) ;
+}
+h2#fail-word{
+  color:blue;
 }
 div.articles img{
   width: 330px;
@@ -111,6 +130,7 @@ footer{
   text-align: center;
   display: flex;
   justify-content: center;
+  background-size: cover;
 }
 div#Github img{
   width: 65px;

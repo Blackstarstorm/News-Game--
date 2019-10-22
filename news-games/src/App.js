@@ -9,7 +9,11 @@ import Hero from './compenents/Hero';
 import Sources from './compenents/Sources';
 import { Route, Link, withRouter } from 'react-router-dom';
 import { getArticles } from './services/api-helper';
-
+// import coin from './coin.mp3';
+// import mario from './mario.mp3';
+import luigi from './luigi.mp3';
+// import pipe from './pipe.mp3';
+// import oneup from './oneup.mp3.';
 
 class App extends React.Component {
   constructor(props) {
@@ -17,7 +21,8 @@ class App extends React.Component {
     this.state = {
       articles: [],
       search: "",
-      radio: ""
+      radio: "",
+      sound:""
       
     }
   }
@@ -36,13 +41,15 @@ class App extends React.Component {
       search: value
     })
   }
+
   handleClick = (event) =>
   {
     let radio = event.target.value
     this.setState({
     radio: radio
     })
-    }
+  }
+  
 
   handleSubmit = async (event) => {
     event.preventDefault();
@@ -55,8 +62,14 @@ class App extends React.Component {
   }
 
   render() {
+    // let audioCoin = new Audio(coin);
+    // let audioHome = new Audio(oneup);
+    // let audioPipe = new Audio(pipe);
+    
+    let audioLuigi = new Audio(luigi);
     return (
       <div className="App">
+        
         <header>
           <Header  />
           <Hero handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
@@ -65,7 +78,8 @@ class App extends React.Component {
           
           <Link to="/Sources">
             <button handleChange={this.buttonChange}
-            id="button-sources">Sources</button>
+              id="button-sources"
+            onClick={async () => await audioLuigi.play()}>Sources</button>
           </Link>
           
         </header>

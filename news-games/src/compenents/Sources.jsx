@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, Route} from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
+import coin from '../coin.mp3'
   
 export default function Sources(props) {
   return (

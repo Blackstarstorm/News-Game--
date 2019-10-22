@@ -1,25 +1,34 @@
 import React from 'react';
 import Nav from './Nav'
+import mario from '../mario.mp3';
 
-
-export default function Hero(props) {
-  return (
-    <section id='hero'>
-      <div id='hero-image'>
+class Hero extends React.Component {
+  constructor(props) {
+    super(props);
     
-      <form onSubmit={props.handleSubmit}>
-        <input id="search-bar" type="text"
-          placeholder=
-          "Type title here(i.e. pokemon)" onChange={props.handleChange}
-        />
-        <button id="submit">
-          Let's a Go
+  }
+    render() {
+      let audioMario = new Audio(mario);
+  
+      return (
+        <section id='hero'>
+          <div id='hero-image'>
+    
+            <form onSubmit={this.props.handleSubmit}>
+              <input id="search-bar" type="text"
+                placeholder=
+                "Type title here(i.e. pokemon)" onChange={this.props.handleChange}
+              />
+              <button id="submit" onClick={async () => await audioMario.play()}>
+                Here We Go
         </button>
 
       
-      </form>   
-      </div>
+            </form>
+          </div>
 
-    </section>
-  )
+        </section>
+      )
+    }
 }
+export default Hero;
