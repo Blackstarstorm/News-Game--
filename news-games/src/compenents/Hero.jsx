@@ -17,7 +17,7 @@ class Hero extends React.Component {
             <form onSubmit={this.props.handleSubmit}>
               <input id="search-bar" type="text"
                 placeholder=
-                "Type title here(i.e. pokemon)" onChange={this.props.handleChange}
+                "Type Topic Here(i.e. pokemon)" onChange={this.props.handleChange}
               />
               <button id="submit" onClick={async () => await audioMario.play()}>
                 Here We Go

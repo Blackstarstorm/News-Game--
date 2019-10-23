@@ -9,11 +9,8 @@ import Hero from './compenents/Hero';
 import Sources from './compenents/Sources';
 import { Route, Link, withRouter } from 'react-router-dom';
 import { getArticles } from './services/api-helper';
-// import coin from './coin.mp3';
-// import mario from './mario.mp3';
 import luigi from './luigi.mp3';
-// import pipe from './pipe.mp3';
-// import oneup from './oneup.mp3.';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -21,8 +18,8 @@ class App extends React.Component {
     this.state = {
       articles: [],
       search: "",
-      radio: "",
-      sound:""
+      radio: ""
+      
       
     }
   }
@@ -62,11 +59,9 @@ class App extends React.Component {
   }
 
   render() {
-    // let audioCoin = new Audio(coin);
-    // let audioHome = new Audio(oneup);
-    // let audioPipe = new Audio(pipe);
     
     let audioLuigi = new Audio(luigi);
+
     return (
       <div className="App">
         

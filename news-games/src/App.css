@@ -53,9 +53,6 @@ input.radio:hover{
   cursor: pointer;
 }
 
-span#link{
- 
-}
 a#home{
   padding: 8px 20px;
   text-decoration: none;
@@ -80,9 +77,8 @@ div#hero-text{
 
 div#article{
   display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 2fr 2fr;
-  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 div#article a{
@@ -117,6 +113,7 @@ h2#fail-word{
 div.articles img{
   width: 330px;
   position: relative;
+  
 }
 
 div.articles img:hover{
