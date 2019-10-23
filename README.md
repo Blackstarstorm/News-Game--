@@ -1,11 +1,11 @@
 ## News-game-+
 
 ## Summary
-### Video games sadly don't get as much represnetation in the media, this app is about to fix that. This news app will show you articles related to the video game topic searched(i.e. Pokemon, Overwatch, Super Samsh Bros. ...etc). 
+### Video games sadly don't get as much represnetation in the media, this app is about to fix that. This news app will show you articles related to the video game topic searched(i.e. Pokemon, Overwatch, Super Samsh Bros. ...etc) and other geeky type of news for you to enjoy. 
 
-### This app will give readers to see what's going on in the gaming and look forward to what is coming.
+### This app will give readers to see what's going on in the gaming world and look forward to what is coming.
 
-
+### P.S click on links it may have a sound
  
 
 ![](https://media.giphy.com/media/NjRQ3HxT7pGfK/giphy.gif)
