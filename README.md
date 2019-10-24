@@ -30,6 +30,9 @@
 ### Better styling
 ### Maybe some music
 
+## Project URL
+### http://news-game-plus.surge.sh/
+
 ## Components
   ### Articles 
   ### Footer 
@@ -37,7 +40,7 @@
   ### Hero
   ### Nav
   ### Sources
-  
+
 ## Final Thoughts
 
 ### I did have to chance the page where I wanted new inteasd it was better to let people pick which news outlet to pick on the soruces page.
