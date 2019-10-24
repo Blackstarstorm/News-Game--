@@ -30,3 +30,10 @@
 ### Better styling
 ### Maybe some music
 
+## Final Thoughts
+
+### I did have to chance the page where I wanted new inteasd it was better to let people pick which news outlet to pick on the soruces page.
+
+### A Huge problem for me was getting the sounds effects and having to learn about how to do it. Reading, Google searches and re-reading even getting others to break it down with me. 
+
+### I problem I couldn't fix was the start up music since Google chrome doesn't approve of it unless people had the option to play it, which would ruin the intro
