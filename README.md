@@ -5,7 +5,7 @@
 
 ### This app will give readers to see what's going on in the gaming world and look forward to what is coming.
 
-### P.S click on links it may have a sound
+### P.S click on links,buttons and/or images it may have a sound
  
 
 ![](https://media.giphy.com/media/NjRQ3HxT7pGfK/giphy.gif)
