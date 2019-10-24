@@ -30,6 +30,14 @@
 ### Better styling
 ### Maybe some music
 
+## Components
+  ### Articles 
+  ### Footer 
+  ### Header
+  ### Hero
+  ### Nav
+  ### Sources
+  
 ## Final Thoughts
 
 ### I did have to chance the page where I wanted new inteasd it was better to let people pick which news outlet to pick on the soruces page.
