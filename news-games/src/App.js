@@ -25,7 +25,8 @@ class App extends React.Component {
   }
 
   componentDidMount = async () => {
-    const articles = await getArticles("polygon","playstation");
+    
+    const articles = await getArticles("polygon", "playstation");
     this.setState({
       articles
     })
@@ -61,7 +62,7 @@ class App extends React.Component {
   render() {
     
     let audioLuigi = new Audio(luigi);
-
+    
     return (
       <div className="App">
         
