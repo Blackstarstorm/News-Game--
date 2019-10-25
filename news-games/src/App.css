@@ -53,15 +53,15 @@ div#sounds{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 170px 250px;
-  
 }
 input.button{
   cursor: pointer;
+  
 }
 input[type='radio'] { 
   width: 30px;
   height: 30px;
-  transform: scale(1.3); }
+  transform: scale(2); }
 
 input.radio:hover{
   cursor: pointer;
