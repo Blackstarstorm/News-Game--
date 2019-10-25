@@ -39,25 +39,25 @@ class Hero extends React.Component {
             
           <div id="sounds">
             <div className="sound">
-              <input  type="radio" name="games" onClick={async () => await audioPS2.play()} />
+              <input className="button" type="radio" name="games" onClick={async () => await audioPS2.play()} />
             </div>
 
             <div className="sound">
-              <input  type="radio" name="games" onClick={async () => await audioPSP.play()}/>
+              <input className="button" type="radio" name="games" onClick={async () => await audioPSP.play()}/>
             </div>
             <div className="sound">
-              <input  type="radio"
+              <input className="button" type="radio"
                 name="games" onClick={async () => await audioGba.play()}/>
             </div>
             <div className="sound">
-              <input  type="radio" name="games" onClick={async () => await audioSega.play()}/>
+              <input className="button" type="radio" name="games" onClick={async () => await audioSega.play()}/>
             </div>
             <div className="sound">
-              <input  type="radio" name="games"
+              <input className="button" type="radio" name="games"
                 onClick={async () => await audioGb.play()}/>
             </div>
             <div className="sound">
-              <input  type="radio" name="games" onClick={async () => await audioXbox.play()}/>
+              <input className="button" type="radio" name="games" onClick={async () => await audioXbox.play()}/>
             </div>
 
             </div>

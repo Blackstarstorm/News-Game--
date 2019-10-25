@@ -53,8 +53,9 @@ div#sounds{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 170px 250px;
+  
 }
-input.sound{
+input.button{
   cursor: pointer;
 }
 input[type='radio'] { 
@@ -160,12 +161,15 @@ div#LinkIn img{
   }
   div#article{
     grid-template-columns: 1fr;
-  
   }
+  
   header{
     background-size: cover;
+
   }
-  
+  div#sounds{
+    display:none;
+  }
   main{
     width: 15%;
     height: 15%;
