@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from './Nav'
 import mario from '../mario.mp3';
-import ps2 from '../ps2.mp3';
+import ps from '../ps.mp3';
 import psp from '../psp.mp3';
 import gb from '../gb.mp3';
 import sega from '../sega.mp3';
@@ -15,7 +15,7 @@ class Hero extends React.Component {
   }
     render() {
       let audioMario = new Audio(mario);
-      let audioPS2 = new Audio(ps2);
+      let audioPS = new Audio(ps);
       let audioPSP = new Audio(psp);
       let audioSega = new Audio(sega);
       let audioGb = new Audio(gb);
@@ -39,7 +39,7 @@ class Hero extends React.Component {
             
           <div id="sounds">
             <div className="sound">
-              <input className="button" type="radio" name="games" onClick={async () => await audioPS2.play()} />
+              <input className="button" type="radio" name="games" onClick={async () => await audioPS.play()} />
             </div>
 
             <div className="sound">
