@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from './Nav'
 import mario from '../mario.mp3';
 import ps from '../ps.mp3';
 import psp from '../psp.mp3';
@@ -9,10 +8,7 @@ import gba from '../gba.mp3';
 import xbox from '../xbox.mp3';
 
 class Hero extends React.Component {
-  constructor(props) {
-    super(props);
-    
-  }
+
     render() {
       let audioMario = new Audio(mario);
       let audioPS = new Audio(ps);

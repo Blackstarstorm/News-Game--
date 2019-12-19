@@ -1,10 +1,8 @@
 import React from 'react';
 import './App.css';
-import axios from 'axios';
 import Header from './compenents/Header';
 import Footer from './compenents/Footer';
 import Articles from './compenents/Articles';
-import Nav from './compenents/Nav';
 import Hero from './compenents/Hero';
 import Sources from './compenents/Sources';
 import { Route, Link, withRouter } from 'react-router-dom';

@@ -4,9 +4,7 @@ import oneup from "../oneup.mp3"
 
 
 class Nav extends React.Component {
-  constructor(props){
-  super(props);
-  }
+
   render() {
     let audioHome = new Audio(oneup);
   return (

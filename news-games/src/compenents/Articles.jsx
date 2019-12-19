@@ -3,9 +3,7 @@ import pipe from "../pipe.mp3";
 import mushroom from "../mushroom.mp3";
 
 class Articles extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+
 
   render() {
     let audioPipe = new Audio(pipe);
@@ -21,18 +19,18 @@ class Articles extends React.Component {
 
                 <h1>{news.title}</h1>
                 <h2>{news.author}</h2>
-                <a target="_blank" href={news.url}><span id="link" onClick={async () => audioPipe.play()}>Source's Page</span>
+                <a target="_blank" href={news.url}rel="noopener noreferrer"><span id="link" onClick={async () => audioPipe.play()} >Source's Page</span>
                 </a>
                 <h3>{news.description}</h3>
-                {news.urlToImage ? <img src={news.urlToImage} onClick={async () => await audioMushroom.play()}/> :
-                  <div><img src="https://res.cloudinary.com/dvysqqdqe/image/upload/v1571757691/crop_xivbsb.jpg" /> <h2>Sorry! Couldn't find an image</h2></div>}
+                {news.urlToImage ? <img src={news.urlToImage} onClick={async () => await audioMushroom.play()} alt="article pic"/> :
+                  <div><img src="https://res.cloudinary.com/dvysqqdqe/image/upload/v1571757691/crop_xivbsb.jpg" alt="sad mario"/> <h2>Sorry! Couldn't find an image</h2></div>}
               
               </div>
               
             ))
             :
             <div id="fail">
-              <img src="https://res.cloudinary.com/dvysqqdqe/image/upload/v1571694391/14-144079_based-on-whats-been-going-on-recently-in_bvsvjl.png" /><h2 id="fail-word">Sorry! Couldn't find anything</h2>
+              <img src="https://res.cloudinary.com/dvysqqdqe/image/upload/v1571694391/14-144079_based-on-whats-been-going-on-recently-in_bvsvjl.png" alt="sad kirby"/><h2 id="fail-word">Sorry! Couldn't find anything</h2>
             </div>
           
         }
