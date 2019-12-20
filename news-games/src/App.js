@@ -8,7 +8,7 @@ import Sources from './compenents/Sources';
 import { Route, Link, withRouter } from 'react-router-dom';
 import { getArticles } from './services/api-helper';
 import luigi from './luigi.mp3';
-
+import coin from './coin.mp3';
 
 class App extends React.Component {
   constructor(props) {
@@ -17,35 +17,35 @@ class App extends React.Component {
       articles: [],
       search: "",
       radio: ""
-      
-      
     }
   }
 
   componentDidMount = async () => {
-    
+
     const articles = await getArticles("polygon", "playstation");
     this.setState({
       articles
     })
   }
- 
+
 
   handleChange = (event) => {
     let value = event.target.value
     this.setState({
       search: value
     })
+
   }
 
-  handleClick = (event) =>
-  {
+  handleClick = async (event) => {
     let radio = event.target.value
     this.setState({
-    radio: radio
+      radio: radio
     })
+    let audioCoin = new Audio(coin);
+    await audioCoin.play()
   }
-  
+
 
   handleSubmit = async (event) => {
     event.preventDefault();
@@ -58,24 +58,24 @@ class App extends React.Component {
   }
 
   render() {
-    
+
     let audioLuigi = new Audio(luigi);
-    
+
     return (
       <div className="App">
-        
+
         <header>
-          <Header  />
+          <Header />
           <Hero handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
           <h2 className="title">Pick a News Source</h2>
-          <Route path='/sources' render={() => <Sources radio={this.state.radio} handleClick={this.handleClick}/>} />
-          
+          <Route path='/sources' render={() => <Sources radio={this.state.radio} handleClick={this.handleClick} />} />
+
           <Link to="/Sources">
             <button handleChange={this.buttonChange}
               id="button-sources"
-            onClick={async () => await audioLuigi.play()}>Sources</button>
+              onClick={async () => await audioLuigi.play()}>Sources</button>
           </Link>
-          
+
         </header>
 
         <main>
