@@ -127,7 +127,7 @@ h2#fail-word{
 div.articles img{
   width: 330px;
   position: relative;
-  
+  transition: .2s ease-out;
 }
 
 div.articles img:hover{
